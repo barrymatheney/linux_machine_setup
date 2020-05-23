@@ -19,4 +19,7 @@ chmod +x $outdir/linux-amd64/helm
 
 sudo mv $outdir/linux-amd64/helm /usr/local/bin/helm
 
+rm -rf $outdir
+rm $targzfilename
+
 
