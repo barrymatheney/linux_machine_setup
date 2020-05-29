@@ -8,5 +8,8 @@ sudo apt install git htop curl wget ansible docker.io  -y
 git config --global user.name "Barry Matheney"
 git config --global user.email "barry_matheney_msdn@outlook.com"
 
+sudo groupadd docker
+sudo usermod -aG docker bmatheney
+
 
 

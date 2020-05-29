@@ -17,3 +17,8 @@ Name:  Open XFCE Terminal Here
 Description:  Open XFCE Terminal Here  
 Command:  xfce4-terminal  --working-directory=%F  
 Icon: Pick One  
+
+
+###  2.  Change Default Browser
+Change browser in XFCE (Settings -> Preferred applications ) 
+
