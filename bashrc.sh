@@ -11,7 +11,7 @@ value="shopt -s histappend\n"
 printf "$value" |  tee -a ~/.bashrc >/dev/null
 
 #show date and time of history from .bash_history
-value="export HISTTIMEFORMAT=’%F %T ‘ \n "
+value="export HISTTIMEFORMAT=’%Y%m%d %T  ‘ \n "
 printf "$value" |  tee -a ~/.bashrc >/dev/null
 value="export HISTFILESIZE=100000 \n "
 printf "$value" |  tee -a ~/.bashrc >/dev/null
@@ -24,4 +24,6 @@ printf "$value" |  tee -a ~/.bashrc >/dev/null
 value="shopt -s histappend \n "
 printf "$value" |  tee -a ~/.bashrc >/dev/null
 value="HISTCONTROL=ignorespace \n "
+printf "$value" |  tee -a ~/.bashrc >/dev/null
+value="alias lsb='lsb_release -dirc'"
 printf "$value" |  tee -a ~/.bashrc >/dev/null
