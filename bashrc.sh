@@ -11,8 +11,8 @@ value="shopt -s histappend\n"
 printf "$value" |  tee -a ~/.bashrc >/dev/null
 
 #show date and time of history from .bash_history
-value="export HISTTIMEFORMAT=’%Y%m%d %T  ‘ \n "
-printf "$value" |  tee -a ~/.bashrc >/dev/null
+value="export HISTTIMEFORMAT=’%Y%m%d_%H%M%S‘ \n "
+#printf "$value" |  tee -a ~/.bashrc >/dev/null
 value="export HISTFILESIZE=100000 \n "
 printf "$value" |  tee -a ~/.bashrc >/dev/null
 value="export HISTSIZE=100000 \n"
