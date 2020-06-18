@@ -3,7 +3,7 @@
 sudo apt install conky-all -y
 
 cp __homedirectorydotconfigs/.conkyrc  ~/
-cp __homedirectorydotconfigs/.xsessionrc  ~/ && chmod +x ~/.xsessionrc
+echo "conky -p 5 -d" >> ~/.xsessionrc  ~/ && chmod +x ~/.xsessionrc
 
 echo done
 
