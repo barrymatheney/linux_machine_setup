@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# https://www.interserver.net/tips/kb/install-xrdp-ubuntu-server-xfce-template/
+# https://linuxize.com/post/how-to-install-xrdp-on-ubuntu-18-04/
 
 sudo apt install -y xrdp
 sudo sed -e 's/^new_cursors=true/new_cursors=false/g' \
