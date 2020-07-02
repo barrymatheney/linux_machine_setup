@@ -1,0 +1,5 @@
+alias ll='ls -l'
+alias lt='ls -tal'
+alias h='history | grep '
+alias la='ls -A'
+alias l='ls -CF'

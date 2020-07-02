@@ -11,10 +11,8 @@ value="shopt -s histappend\n"
 printf "$value" |  tee -a ~/.bashrc >/dev/null
 
 #show date and time of history from .bash_history
-value="export HISTTIMEFORMAT=\"%y%m%d_%H%M%S \""
-echo "$value" |  tee -a ~/.bashrc >/dev/null
-value="\n"
-echo "$value" |  tee -a ~/.bashrc >/dev/null
+#value="export HISTTIMEFORMAT=\""%y%m%d_%H%M%S" \"\n"
+#printf "$value" |  tee -a ~/.bashrc >/dev/null
 value="export HISTFILESIZE=100000\n"
 printf "$value" |  tee -a ~/.bashrc >/dev/null
 value="export HISTSIZE=100000\n"
@@ -27,7 +25,15 @@ value="shopt -s histappend\n"
 printf "$value" |  tee -a ~/.bashrc >/dev/null
 value="HISTCONTROL=ignorespace\n"
 printf "$value" |  tee -a ~/.bashrc >/dev/null
-value="alias lsb='lsb_release -dirc'\n"
-printf "$value" |  tee -a ~/.bashrc >/dev/null
 value="\n\n"
 printf "$value" |  tee -a ~/.bashrc >/dev/null
+
+
+value="if [ -f ~/.bash_aliases ]; then\n"
+printf "$value" |  tee -a ~/.bashrc >/dev/null
+value="    . ~/.bash_aliases\n"
+printf "$value" |  tee -a ~/.bashrc >/dev/null
+value="fi\n"
+printf "$value" |  tee -a ~/.bashrc >/dev/null
+
+cat ~/.bashrc
