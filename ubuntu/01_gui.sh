@@ -1,10 +1,4 @@
 #!/bin/bash
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get -y  install  gitk  meld  xclip 
 
-#install and set up all of the command line stuff first
-. ./01_nogui.sh
-
-sudo apt install  gitk  meld  xclip xfce -y
-
-
-
-
+ 
