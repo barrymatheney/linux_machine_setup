@@ -1,0 +1,21 @@
+gitpi
+
+
+https://www.instructables.com/id/GitPi-A-Private-Git-Server-on-Raspberry-Pi/
+
+sudo blkid
+
+/dev/mmcblk0p1: LABEL_FATBOOT="boot" LABEL="boot" UUID="592B-C92C" TYPE="vfat" PARTUUID="cc0c8fda-01"
+/dev/mmcblk0p2: LABEL="rootfs" UUID="706944a6-7d0f-4a45-9f8c-7fb07375e9f7" TYPE="ext4" PARTUUID="cc0c8fda-02"
+/dev/sda1: LABEL="GitPi256GBUSB" UUID="bebb1e68-18aa-4eee-814b-b1fa96ca78ba" TYPE="ext4" PARTUUID="2c7abc3b-01"
+
+
+sudo nano /etc/fstab
+add:
+PARTUUID=2c7abc3b-01  /mnt/sda1       ext4    defaults   0  0
+
+sudo mkdir /mnt
+sudo mkdir /mnt/sda1
+sudo mount -a
+cd /mnt/sda1
+ls -al

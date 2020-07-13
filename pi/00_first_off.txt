@@ -1,0 +1,10 @@
+hostip="192.168.1.113"
+ssh pi@$hostip
+passwd change to r......1
+sudo adduser bmatheney  --gid 0
+exit
+ssh-copy-id -i ~/.ssh/id_rsa.pub bmatheney@$hostip
+ssh bmatheney@$hostip
+ssh-copy-id -i ~/.ssh/id_rsa.pub pi@$hostip
+ssh pi@$hostip
+

@@ -1,5 +1,3 @@
-#!/bin/bash
-
 
 value="\n\n"
 printf "$value" |  tee -a ~/.bashrc >/dev/null
