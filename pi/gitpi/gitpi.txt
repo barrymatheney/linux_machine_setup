@@ -19,3 +19,49 @@ sudo mkdir /mnt/sda1
 sudo mount -a
 cd /mnt/sda1
 ls -al
+
+
+#MAKE IT AN NFS Server
+https://www.raspberrypi.org/documentation/configuration/nfs.md
+sudo apt install nfs-kernel-server
+
+sudo mkdir -p /export/nfs/joplin
+sudo chmod 777 /export -R
+sudo mount --bind /mnt/sda1/nfs/joplin /export/nfs/joplin
+
+value="\n"
+printf "$value" |  sudo tee -a /etc/fstab >/dev/null
+value="/mnt/sda1/nfs/joplin     /export/nfs/joplin   none    bind  0  0\n"
+printf "$value" |  sudo tee -a /etc/fstab >/dev/null
+cat /etc/fstab
+
+#The only important option in /etc/default/nfs-kernel-server for now is NEED_SVCGSSD. It is set to "no" or an empty string by default, which is fine, because we are not activating NFSv4 security this time.
+sudo nano /etc/default/nfs-kernel-server
+cat this file to be sure it matches between the PI and the localhost
+cat /etc/idmapd.conf
+
+
+value="\n"
+printf "$value" |  sudo tee -a /etc/exports  >/dev/null
+value="/export         192.168.1.0/24(rw,fsid=0,insecure,no_subtree_check,async)\n"
+printf "$value" |  sudo tee -a /etc/exports  >/dev/null
+value="/export/nfs     192.168.1.0/24(rw,nohide,insecure,no_subtree_check,async)\n"
+printf "$value" |  sudo tee -a /etc/exports  >/dev/null
+value="/export/nfs/joplin   192.168.1.0/24(rw,nohide,insecure,no_subtree_check,async)\n"
+printf "$value" |  sudo tee -a /etc/exports  >/dev/null
+cat /etc/exports 
+
+
+
+value="\n"
+printf "$value" |  sudo tee -a /etc/hosts.deny >/dev/null
+value="rpcbind mountd nfsd statd lockd rquotad : ALL\n"
+printf "$value" |  sudo tee -a /etc/hosts.deny >/dev/null
+cat /etc/hosts.deny
+
+
+value="\n"
+printf "$value" |  sudo tee -a /etc/hosts.allow >/dev/null
+value="rpcbind mountd nfsd statd lockd rquotad : 192.168.1.164 \n"
+printf "$value" |  sudo tee -a /etc/hosts.allow >/dev/null
+cat /etc/hosts.allow
