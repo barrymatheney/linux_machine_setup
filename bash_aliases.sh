@@ -17,4 +17,6 @@ value="alias l='ls -CF'\n"
 printf "$value" |  tee -a ~/.bash_aliases >/dev/null
 value="alias lsb='lsb_release -dirc'\n"
 printf "$value" |  tee -a ~/.bash_aliases >/dev/null
+value="alias h='history | grep '\n"
+printf "$value" |  tee -a ~/.bash_aliases >/dev/null
 cat ~/.bash_aliases

@@ -6,5 +6,3 @@ centos and ubuntu respective
 
 
 
-
-
