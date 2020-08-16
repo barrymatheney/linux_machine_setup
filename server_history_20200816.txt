@@ -1,0 +1,563 @@
+    1  20200815_202925 sudo su
+    2  20200815_202925 exit
+    3  20200815_202925 htop
+    4  20200815_202925 mkdir source
+    5  20200815_202925 cd source
+    6  20200815_202925 git clone https://github.com/barrymatheney/linux_machine_setup
+    7  20200815_202925 cd linux_machine_setup/
+    8  20200815_202925 ls
+    9  20200815_202925 cd ubuntu/
+   10  20200815_202925 ls
+   11  20200815_202925 cat 01_nogui.sh 
+   12  20200815_202925 nano 01_nogui.sh 
+   13  20200815_202925 ./01_nogui.sh 
+   14  20200815_202925 sudo su
+   15  20200815_202925 ip a
+   16  20200815_202925 sudo apt update
+   17  20200815_202925 sudo apt install tasksel
+   18  20200815_202925 tasksel --list-tasks
+   19  20200815_202925 sd
+   20  20200815_202925 df
+   21  20200815_202925 free
+   22  20200815_202925 tasksel --list-tasks
+   23  20200815_202925 sudo tasksel install xubuntu-desktop
+   24  20200815_202925 sudo reboot now
+   25  20200815_202925 exit
+   26  20200815_202925 ls
+   27  20200815_202925 mkdir virtualbox_vms
+   28  20200815_202925 cd virtualbox_vms/
+   29  20200815_202925 ls
+   30  20200815_202925 ls t
+   31  20200815_202925 ls -al
+   32  20200815_202925 history
+   33  20200815_202925 sudo apt-get -y  install  gitk  meld  xclip  gparted
+   34  20200815_202925 gparted
+   35  20200815_202925 lsblk
+   36  20200815_202925 cd linux_machine_setup/
+   37  20200815_202925 cd ubuntu/
+   38  20200815_202925 ./virtualbox.sh 
+   39  20200815_202925 xrandr
+   40  20200815_202925 htop
+   41  20200815_202925 xrandr
+   42  20200815_202925 htop
+   43  20200815_202925 history
+   44  20200815_202925 ip a
+   45  20200815_202925 netstat
+   46  20200815_202925 sudo apt install net-tools
+   47  20200815_202925 netstat
+   48  20200815_202925 ip a
+   49  20200815_202925 nmap
+   50  20200815_202925 sudo snap install nmap  -y
+   51  20200815_202925 sudo apt install nmap  -y
+   52  20200815_202925 nmap localhost
+   53  20200815_202925 ssh localhost
+   54  20200815_202925 sudo apt install git htop curl wget
+   55  20200815_202925 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+   56  20200815_202925 sudo apt install ./google-chrome-stable_current_amd64.deb
+   57  20200815_202925 sudo apt-get install software-properties-common apt-transport-https wget -y
+   58  20200815_202925 cd source/
+   59  20200815_202925 code .
+   60  20200815_202925 sudo apt install code
+   61  20200815_202925 sudo snap install code
+   62  20200815_202925 sudo snap install code --classic
+   63  20200815_202925 code .
+   64  20200815_202925 lxc
+   65  20200815_202925 lxc image
+   66  20200815_202925 lxc image list
+   67  20200815_202925 lxc launch ubuntu:18.04
+   68  20200815_202925 lxd init
+   69  20200815_202925 df
+   70  20200815_202925 ip addr
+   71  20200815_202925 cd ..
+   72  20200815_202925 cd vboxtemp/
+   73  20200815_202925 ls
+   74  20200815_202925 code .
+   75  20200815_202925 history
+   76  20200815_202925 history | grep vnc
+   77  20200815_202925 sudo apt install xrdp
+   78  20200815_202925 sudo systemctl enable --now xrdp
+   79  20200815_202925 sudo ufw allow from any to any port 3389 proto tcp
+   80  20200815_202925 rm -rf virtualbox_vms/
+   81  20200815_202925 code .
+   82  20200815_202925 cd ..
+   83  20200815_202925 code .
+   84  20200815_202925 sudo system-config-lvm
+   85  20200815_202925 sudo apt install system-config-lvm
+   86  20200815_202925 df
+   87  20200815_202925 df -h
+   88  20200815_202925 df -H
+   89  20200815_202925 mount
+   90  20200815_202925 mount | grep /
+   91  20200815_202925 mount | grep " / "
+   92  20200815_202925 sudo fdisk -l
+   93  20200815_202925 parted
+   94  20200815_202925 sudo su -i 
+   95  20200815_202925 sudo su 
+   96  20200815_202925 sudo apt install xfce4-goodies
+   97  20200815_202925 cd /source
+   98  20200815_202925 pwd
+   99  20200815_202925 ls
+  100  20200815_202925 cd ..
+  101  20200815_202925 ls
+  102  20200815_202925 cd bmatheney/
+  103  20200815_202925 cd source
+  104  20200815_202925 cd linux_machine_setup/
+  105  20200815_202925 ls
+  106  20200815_202925 cd serverubuntu2004/
+  107  20200815_202925 ls
+  108  20200815_202925 cd ..
+  109  20200815_202925 cd ubuntu/
+  110  20200815_202925 cd 
+  111  20200815_202925 cd source
+  112  20200815_202925 cd linux_machine_setup/
+  113  20200815_202925 cd ubuntu/
+  114  20200815_202925 ls
+  115  20200815_202925 nana 01_gui.sh 
+  116  20200815_202925 nano 01_gui.sh 
+  117  20200815_202925 sudo apt install tightvncserver
+  118  20200815_202925 nano 01_gui.sh 
+  119  20200815_202925 cat 01_gui.sh 
+  120  20200815_202925 vncpasswd
+  121  20200815_202925 nano ~/.vnc/xstartup
+  122  20200815_202925 chmod +x ~/.vnc/xstartup
+  123  20200815_202925 vncserver -localhost
+  124  20200815_202925 ps -e
+  125  20200815_202925 ps -e | grep vnc
+  126  20200815_202925 kill 75368
+  127  20200815_202925 vncserver
+  128  20200815_202925 ss -ltn
+  129  20200815_202925 sudo ufw allow from any to any port 5901 proto tcp
+  130  20200815_202925 history
+  131  20200815_202925 nano ~/.vnc/xstartup
+  132  20200815_202925 cat  ~/.vnc/xstartup
+  133  20200815_202925 which startxfce4
+  134  20200815_202925 cat  ~/.vnc/xstartup
+  135  20200815_202925 nano ~/.vnc/xstartup
+  136  20200815_202925 vncserver kill :1
+  137  20200815_202925 vncserver 
+  138  20200815_202925 ps -e | grep vnc
+  139  20200815_202925 kill 76521
+  140  20200815_202925 kill 72816
+  141  20200815_202925 kill 75816
+  142  20200815_202925 ps -e | grep vnc
+  143  20200815_202925 vncserver :1 -geometry 1024x768 -depth 24 -localhost no
+  144  20200815_202925 vncserver :1 -geometry 1024x768 -depth 24
+  145  20200815_202925 ps -e | grep vnc
+  146  20200815_202925 kill 77286
+  147  20200815_202925 vncserver :1 
+  148  20200815_202925 vncserver kill :1
+  149  20200815_202925 vncserver kill 1
+  150  20200815_202925 ps -e | grep vnc
+  151  20200815_202925 kill 77584
+  152  20200815_202925 history
+  153  20200815_202925 history | grep apt
+  154  20200815_202925 xrandr
+  155  20200815_202925 vncserver :1 
+  156  20200815_202925 sudo aptitude install x11-xserver-utils
+  157  20200815_202925 sudo apt install x11-xserver-utils
+  158  20200815_202925 sudo apt install randr
+  159  20200815_202925 htop
+  160  20200815_202925 vncserver :1 
+  161  20200815_202925 vncserver kill :1 
+  162  20200815_202925 vncserver -kill :1 
+  163  20200815_202925 vncserver :1 
+  164  20200815_202925 vncserver :1 -geometry 1600x900
+  165  20200815_202925 vncserver -kill :1 
+  166  20200815_202925 vncserver :1 -geometry 1600x900
+  167  20200815_202925 vncserver -kill :1 
+  168  20200815_202925 vncserver :1 -geometry 1600x900
+  169  20200815_202925 vncserver -kill :1 
+  170  20200815_202925 vncserver :1 -geometry 1600x900
+  171  20200815_202925 exit
+  172  20200815_202925 cd ..
+  173  20200815_202925 code .
+  174  20200815_202925 history | grep vnc
+  175  20200815_202925 sudo apt install tightvncserver
+  176  20200815_202925 sudo apt remove tightvncserver
+  177  20200809_160441 export HISTTIMEFORMAT="%y%m%d_%H%M%S"
+  178  20200809_160443 history
+  179  20200809_160501 export HISTTIMEFORMAT="%y%m%d_%H%M%S "
+  180  20200809_160504 h this
+  181  20200809_160532 exit
+  182  20200809_160540 h this
+  183  20200809_161221 h vnc
+  184  20200815_202925 history
+  185  20200815_202925 cd source
+  186  20200815_202925 cd linux_machine_setup/
+  187  20200815_202925 code .
+  188  20200815_202925 exit
+  189  20200809_162421 cd source/linux_machine_setup/ubuntu/
+  190  20200809_162425 ./docker.sh 
+  191  20200809_162452 ./docker.sh 
+  192  20200809_162538 docker --version
+  193  20200809_162544 docker --info
+  194  20200809_162909 ls docker* -al
+  195  20200809_162917 cd ubuntu/
+  196  20200809_162918 ls docker* -al
+  197  20200809_162930 chmod +x *.sh
+  198  20200809_162941 ls docker* -al
+  199  20200809_162951 ./docker_compose.sh 
+  200  20200809_162958 docker-compose
+  201  20200809_163146 git status
+  202  20200809_163152 git push
+  203  20200809_163210 git remote -v
+  204  20200809_163242 git remote rm origin
+  205  20200809_163253 git remote add origin git@github.com:barrymatheney/linux_machine_setup.git
+  206  20200809_163258 git remote -v
+  207  20200809_163301 git push
+  208  20200809_163312 git push --set-upstream origin master
+  209  20200809_163334 cd ~/.ssh
+  210  20200809_163338 ls
+  211  20200809_163539 cd ~/.ssh
+  212  20200809_163539 chmod 644 ~/.ssh/id_rsa.pub && chmod 600 ~/.ssh/id_rsa && chmod 600 ~/.ssh/known_hosts
+  213  20200809_163548 git push --set-upstream origin master
+  214  20200809_163555 git pull
+  215  20200809_163600 git push
+  216  20200809_163635 ./hh.sh 
+  217  20200809_163702 ./hh.sh 
+  218  20200809_163711 hh
+  219  20200809_163822 ./kubectl.sh 
+  220  20200809_163838 ls
+  221  20200809_163847 rm virtualbox-6.1_6.1.8-137981~Ubuntu~eoan_amd64.deb 
+  222  20200809_163853 cd ..
+  223  20200809_163854 ls
+  224  20200809_163902 cd serverubuntu2004/
+  225  20200809_163903 ls
+  226  20200809_163921 cd ..
+  227  20200809_163922 cd ubuntu/
+  228  20200809_163932 ./vagrant.sh 
+  229  20200809_163955 rm vagrant_2.2.9_x86_64.deb 
+  230  20200809_163958 vagrant
+  231  20200809_164017 cd ..
+  232  20200809_164024 ./gitpromptbash.sh 
+  233  20200809_164032 git status
+  234  20200809_164106 ./get-distro.sh
+  235  20200809_164117 ./get-docker.sh
+  236  20200809_164121 ls -al
+  237  20200809_164148 ls
+  238  20200809_164156 ./get-docker.sh
+  239  20200809_164834 cd ~
+  240  20200809_164852 mkdir perm
+  241  20200809_164854 cd perm
+  242  20200809_164856 ls
+  243  20200809_164923 mkdir temp1
+  244  20200809_164927 cd temp1
+  245  20200809_164932 code .
+  246  20200809_165053 vagrant up
+  247  20200809_194339 code .
+  248  20200809_195016 vagrant plugin install vagrant-docker-compose
+  249  20200809_195100 vagrant up
+  250  20200809_195312 vagrant up
+  251  20200809_202104 vagrant up
+  252  20200810_083122 vagrant status
+  253  20200810_085018 docker --version
+  254  20200810_085528 chmod +x *.sh
+  255  20200810_085529 ls -al
+  256  20200810_083131 vagrant ssh
+  257  20200810_085842 ls
+  258  20200810_085847 vagrant destroy
+  259  20200810_085910 vagrant up
+  260  20200810_090316 vagrant destroy
+  261  20200810_090348 vagrant up
+  262  20200810_090548 vagrant up
+  263  20200810_090652 vagrant destroy
+  264  20200810_090702 vagrant up
+  265  20200810_090806 vagrant up
+  266  20200810_090825 vagrant destroy -y
+  267  20200810_090831 vagrant destroy -f
+  268  20200810_090847 vagrant destroy 
+  269  20200810_090934 vagrant up
+  270  20200810_091010 vagrant up
+  271  20200810_091136 vagrant up
+  272  20200810_091235 vagrant destroy 
+  273  20200810_091254 vagrant up
+  274  20200810_091533 vagrant ssh
+  275  20200810_091649 vagrant destroy 
+  276  20200810_091718 ls
+  277  20200810_091722 vagrant up
+  278  20200810_092548 git init
+  279  20200810_092610 code .
+  280  20200810_210713 mkdir piholevagrant02
+  281  20200810_210717 cd piholevagrant02
+  282  20200810_211040 exit
+  283  20200810_211052 vagrant init bento/ubuntu-20.04
+  284  20200810_211056 vagrant up
+  285  20200810_211154 vagrant ssh
+  286  20200811_053358 vagrant status
+  287  20200811_053420 code .
+  288  20200811_053548 vagrant halt
+  289  20200811_053607 vagrant up --provision
+  290  20200811_053851 vagrant status
+  291  20200811_053903 vagrant ssh
+  292  20200811_054112 vagrant ssh
+  293  20200811_054224 vagrant halt
+  294  20200811_054343 vagrant up --provision
+  295  20200811_054938 docker images
+  296  20200811_054941 exit
+  297  20200811_054949 docker 
+  298  20200811_054953 docker images
+  299  20200811_055001 whoami
+  300  20200811_055005 groups
+  301  20200811_055022 sudo groupadd docker
+  302  20200811_055024 sudo usermod -aG docker $USER
+  303  20200811_055029 docker images
+  304  20200811_055033 sudo docker images
+  305  20200811_060923 code .
+  306  20200811_061000 ./get-ext-ip.sh 
+  307  20200811_055037 sudo su
+  308  20200811_063214 vagran halt
+  309  20200811_063222 vagrant halt
+  310  20200811_063232 cd ..
+  311  20200811_063254 vagrant halt
+  312  20200811_063313 vagrant status
+  313  20200811_082442 code .
+  314  20200811_120400 ssh 10.0.0.15
+  315  20200811_120424 ssh 10.0.2.15
+  316  20200811_120613 ssh 192.168.1.124
+  317  20200811_125817 ssh 192.168.1.124
+  318  20200811_130112 lsof
+  319  20200811_130129 lsof | grep Additions
+  320  20200811_130235 lsof | grep virtualbox
+  321  20200811_130321 lsof | grep VBoxGuestAdditions.iso
+  322  20200811_130507 sudo reboot now
+  323  20200811_131225 ls /usr/share/virtualbox/VBoxGuestAdditions.iso
+  324  20200811_131231 ls /usr/share/virtualbox/VBoxGuestAdditions.iso -al
+  325  20200811_131501 ssh 192.168.1.124
+  326  20200811_142328 sudo apt install reminna
+  327  20200811_142354 sudo apt install remmina
+  328  20200811_142919 ssh 192.168.1.124
+  329  20200813_071143 cd Downloads/
+  330  20200813_071144 ls
+  331  20200813_071247 sudo apt install  virtualbox-6.1_6.1.12-139181_Ubuntu_eoan_amd64.deb 
+  332  20200813_071255 sudo apt install  ./virtualbox-6.1_6.1.12-139181_Ubuntu_eoan_amd64.deb 
+  333  20200813_093217 ps xrdp
+  334  20200813_093226 ps - | grep  xrdp
+  335  20200813_093231 ps -e | grep  xrdp
+  336  20200813_093320 ip a
+  337  20200813_093405 sudo systemctl status xrdp
+  338  20200813_093438 sudo systemctl status xrdp
+  339  20200813_093500 sudo systemctl restart xrdp
+  340  20200813_093718 ssh-copy-id
+  341  20200813_093849 history
+  342  20200813_093855 sudo systemctl status xrdp
+  343  20200813_093904 sudo systemctl status xrdp
+  344  20200813_104820 ps -e | grep xf
+  345  20200813_104840 sudo service xfce4-session restart
+  346  20200813_104854 sudo service xfce4 restart
+  347  20200813_104858 sudo service xfce restart
+  348  20200813_104946 sudo systemctl restart lightdm
+  349  20200813_105009 ps -e
+  350  20200813_105019 ps -e | grep xrdp
+  351  20200813_105317 exit
+  352  20200813_105535 sudo apt install -y xorgxrdp xserver-xorg-input-all
+  353  20200813_105630 sudo ufw allow from any to any port 3389 proto tcp
+  354  20200813_105730 sudo systemctl enable --now xrdp
+  355  20200813_105749 sudo systemctl status xrd[
+  356  20200813_105751 sudo systemctl status xrdp
+  357  20200813_110008 sudo ufw disable
+  358  20200813_114349 exit
+  359  20200813_174428 ufw
+  360  20200813_174431 ufw status
+  361  20200813_174437 sudo ufw status
+  362  20200813_174442 sudo ufw active
+  363  20200813_174507 sudo ufw status numbered
+  364  20200813_174517 sudo ufw enable
+  365  20200813_174520 sudo ufw status numbered
+  366  20200813_191730 exxit
+  367  20200813_191742 h ufw
+  368  20200813_191805 sudo ufw allow from any to any port 22 proto tcp
+  369  20200813_191812 sudo ufw status numbered
+  370  20200813_191916 exit
+  371  20200813_192422 cat ~/.xsession
+  372  20200813_192446 xfce4-session >~/.xsession
+  373  20200813_192502 echo xfce4-session >~/.xsession
+  374  20200813_192710 cat /etc/X11/Xsession
+  375  20200813_192522 sudo nano /etc/xrdp/startwm.sh
+  376  20200813_192842 sudo service xrdp restart
+  377  20200813_192940 cd /var/log
+  378  20200813_192943 ls x*
+  379  20200813_192948 cat xrdp.log
+  380  20200813_193011 ls
+  381  20200813_193014 ls x*
+  382  20200813_193026 cat xrdp-sesman.log
+  383  20200813_193402 cat xrdp.log
+  384  20200813_193604 sudo nano /etc/xrdp/xrdp.ini
+  385  20200813_193846 h restart
+  386  20200813_193856 sudo systemctl restart xrdp
+  387  20200813_194005 sudo apt-get purge xrdp
+  388  20200813_194114 h install
+  389  20200813_194141 sudo apt install xrdp
+  390  20200813_194349 h ufw
+  391  20200813_194354 sudo ufw status numbered
+  392  20200813_194457 sudo ufw disable
+  393  20200813_194514 sudo ufw enable
+  394  20200813_194522 sudo ufw status numbered
+  395  20200813_194613 netstat -an | grep "LISTEN " | grep ":3389"
+  396  20200813_194808 echo "xfce4-session" > ~/.xsession
+  397  20200813_195013 ssh -L 3390:192.168.1.126:3389 -l bmatheney server
+  398  20200813_195030 ssh -L 3390:192.168.1.126:3389 -l bmatheney 192.168.1.1626
+  399  20200813_195131 exit
+  400  20200813_195039 ssh -L 3390:192.168.1.126:3389 -l bmatheney 192.168.1.126
+  401  20200813_195227 exit
+  402  20200813_195211 ssh -L 3390:127.0.0.1:3389 -l bmatheney 192.168.1.126
+  403  20200813_195338 sudo nano /etc/xrdp/startwm.sh
+  404  20200813_195613 h vnc
+  405  20200813_195631 sudo apt install vncserver
+  406  20200813_200446 ps -A | grep rdp
+  407  20200813_200543 cd /etc
+  408  20200813_200604 find . -name=xrdp.ini 
+  409  20200813_200608 find
+  410  20200813_200620 find --help
+  411  20200813_200658 find . -n xrdp.ini 
+  412  20200813_200709 find . -name xrdp.ini 
+  413  20200813_200716 sudo find . -name xrdp.ini 
+  414  20200813_200725 cd xrdp/
+  415  20200813_200727 ls
+  416  20200813_200742 cat xrdp.ini
+  417  20200813_200816 cat xrdp.ini | xorg
+  418  20200813_200820 cat xrdp.ini | grep xorg
+  419  20200813_200830 cat xrdp.ini | grep Xorg
+  420  20200813_200925 apt-get purge xserver-xorg-legacy
+  421  20200813_200933 sudo apt-get purge xserver-xorg-legacy
+  422  20200813_200957 sudo apt-get purge xrdp
+  423  20200813_201023 sudo apt-get install xrdp
+  424  20200813_201152 cd ,,
+  425  20200813_201202 cd ~
+  426  20200813_201206 sudo apt-get purge xrdp
+  427  20200813_201238 sudo apt-get install xrdp
+  428  20200813_201301 ps -e | grep rdp
+  429  20200813_202311 sudo nano /etc/X11/Xwrapper.config
+  430  20200813_202341 sudo service xrdp restart
+  431  20200813_202403 ps -e | grep xrdp
+  432  20200813_202527 netstat -an | grep "LISTEN " | grep ":3389"
+  433  20200813_202808 sudo adduser xrdp ssl-cert
+  434  20200813_203121 cat ~/.xsession
+  435  20200813_203142 xfce
+  436  20200813_203146 startx
+  437  20200813_203308 which startx
+  438  20200813_203317 cat /usr/bin/startx
+  439  20200813_203438 more /usr/bin/startx
+  440  20200813_202625 sudo nano /etc/xrdp/xrdp.ini
+  441  20200813_203935 cat .xinitrc 
+  442  20200813_204019 cat $HOME/.xserverrc
+  443  20200813_204047 cat $HOME/.xinitrc
+  444  20200813_204243 cat /usr/bin/startx
+  445  20200813_204306 cat /etc/X11/xinit/xinitrc
+  446  20200813_204323 cat /etc/X11/Xsession
+  447  20200813_204423 which startx
+  448  20200813_204436 cat /usr/bin/startx
+  449  20200813_204634 nano ~/.xsession
+  450  20200813_204757 startxfce4
+  451  20200813_204813 nano ~/.xsession
+  452  20200813_205728 history
+  453  20200813_205844 sudo apt install -y xorgxrdp xserver-xorg-input-all
+  454  20200813_205926 history | grep xrdp
+  455  20200813_210339 . ~/.bashrc
+  456  20200813_210346 history
+  457  20200813_210417 . ~/.bashrc
+  458  20200813_210419 history
+  459  20200813_210429 . ~/.bashrc
+  460  20200813_210431 history
+  461  20200813_210449 h 2020
+  462  20200813_210506 h xrdp
+  463  20200813_210525 exit
+  464  20200813_210229 nano ~/.bashrc
+  465  20200813_210538 h xrdp
+  466  20200813_210543 h xrdp
+  467  20200813_210600 history
+  468  20200814_160035 VBoxManage internalcommands sethduuid plusoneserverfordev2019.vhd 
+  469  20200815_083744 ssh-copy-id ~/.ssh/id_rsa.pub
+  470  20200815_083831 ssh-copy-id ~/.ssh/id_rsa.pub 192.168.1.153
+  471  20200815_083907 ssh-copy-id -i ~/.ssh/id_rsa.pub 192.168.1.1533
+  472  20200815_083918 ssh-copy-id -i ~/.ssh/id_rsa.pub 192.168.1.153
+  473  20200815_083934 ssh 192.168.1.153
+  474  20200815_085021 ssh 192.168.1.153
+  475  20200815_090606 ssh 192.168.1.153
+  476  20200815_090821 ssh 192.168.1.153
+  477  20200815_091100 ssh 192.168.1.153
+  478  20200815_103928 sudo apt install xrdp
+  479  20200815_103941 sudo adduser xrdp ssl-cert
+  480  20200815_103951 sudo systemctl restart xrdp
+  481  20200815_104022 sudo ufw allow from 192.168.0.0/16 to any port 3389
+  482  20200815_104040 ip a
+  483  20200815_104254 cd ..
+  484  20200815_104300 cd 
+  485  20200815_104306 du virtualboxvms/
+  486  20200815_104325 du -h virtualboxvms/
+  487  20200815_145858 cat /var/log/xrdp.log
+  488  20200815_150149 h
+  489  20200815_150152 h ssh
+  490  20200815_150143 sudo nano /etc/xrdp/xrdp.ini
+  491  20200815_150202 h ssh
+  492  20200815_150212 exit
+  493  20200813_191726 ssh localhost
+  494  20200815_150217 exit
+  495  20200815_150222 exit
+  496  20200815_150445 h ssh
+  497  20200815_150506 sudo nano /etc/xrdp/xrdp.ini
+  498  20200815_151433 cat /etc/xrdp/sesman.ini
+  499  20200815_151516 ls /etc/xrdp/sesman.ini -tal
+  500  20200815_151538 sudo cat /etc/xrdp/sesman.ini
+  501  20200815_151818 sud cat /etc/xrdp/pulse/default.pa
+  502  20200815_151824 sudo cat /etc/xrdp/pulse/default.pa
+  503  20200815_151917 sudo cat  /usr/bin/sesman
+  504  20200815_151948 ls /usr/bin/sesrun
+  505  20200815_152014 cat /etc/xrdp/sesman.ini
+  506  20200815_152629 sudo apt-get install xserver-xorg-core
+  507  20200815_152650 sudo apt-get install xorgxrdp
+  508  20200815_152705 sudo nano /etc/polkit-1/localauthority.conf.d/02-allow-colord.conf
+  509  20200815_152735 sudo /etc/init.d/xrdp restart
+  510  20200815_152745 sudo systemctl status xrdp
+  511  20200815_152820 sudo systemctl enable xrdp
+  512  20200815_152832 ip a
+  513  20200815_153116 sudo apt-get install xorgxrdp  
+  514  20200815_153139 sudo apt-get install  xsrever-xorg-input-all package
+  515  20200815_153152 xserver-xorg-core
+  516  20200815_153158 sudo apt-get install  xserver-xorg-core
+  517  20200815_153212 sudo apt-get install xserver-xorg-core
+  518  20200815_153222 sudo apt-get install xorgxrdp
+  519  20200815_153334 sudo apt-get install vnc4server
+  520  20200815_153921 cat /etc/mkinitcpio.conf
+  521  20200815_154036 systemctl restart systemd-logind.service
+  522  20200815_154043 sudo systemctl restart systemd-logind.service
+  523  20200815_154059 systemctl status systemd-logind.service
+  524  20200815_154155 systemctl status systemd-logind.service
+  525  20200815_150450 ssh 192.168.1.153
+  526  20200815_154716 groups
+  527  20200815_154813 cat /etc/group
+  528  20200815_154904 sudo usermod -G xrdp -a bmatheney
+  529  20200815_154908 groups
+  530  20200815_155035 id
+  531  20200815_155204 groups
+  532  20200815_155211 cat /etc/group
+  533  20200815_155240 sudo nano /etc/group
+  534  20200815_155409 sudo usermod –a –G xrdp bmatheney
+  535  20200815_195433 cat ~/.xsession
+  536  20200815_195442 echo xfce4-session >~/.xsession
+  537  20200815_195451 sudo service xrdp restart
+  538  20200815_195744 cd /var/log
+  539  20200815_195745 ls 
+  540  20200815_195750 lx x*
+  541  20200815_195753 ls x*
+  542  20200815_195805 cat xrdp.log
+  543  20200815_200620 h apt
+  544  20200815_200657 h sudo apt-get install 
+  545  20200815_200707 h 'sudo apt-get install'
+  546  20200815_200818 h 'sudo apt install'
+  547  20200815_200908 sudo apt-get purge vnc4server xsrever-xorg-input-all xserver-xorg-core xorgxrdp xrdp 
+  548  20200815_200933 sudo apt-get purge vnc4server xserver-xorg-input-all xserver-xorg-core xorgxrdp xrdp 
+  549  20200815_201015 sudo reboot now
+  550  20200815_201811 startx
+  551  20200815_201840 history
+  552  20200815_201857 h tasksel
+  553  20200815_201908 sudo tasksel install xubuntu-desktop
+  554  20200815_202855 sudo apt update
+  555  20200815_202927 apt list --upgradable
+  556  20200815_202939 sudo apt list --upgradable
+  557  20200815_203000 sudo apt upgrade
+  558  20200816_095810 cd source/
+  559  20200816_095812 cd linux_machine_setup/
+  560  20200816_095814 git status
+  561  20200816_095822 h git
+  562  20200816_095845 history
+  563  20200816_095918 history > server_history_20200816.txt
