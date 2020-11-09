@@ -13,7 +13,8 @@ alias gc="git commit -m $(date '+%Y%m%d_%H%M%S')"
 alias gp='git push'
 alias gs='git status'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-
+alias grm="git pull --rebase origin master"
+alias gacp='ga && gc && gp'
 
 alias db='docker build .'
 alias di='docker images'
