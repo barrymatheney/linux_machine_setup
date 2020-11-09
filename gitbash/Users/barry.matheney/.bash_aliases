@@ -21,3 +21,5 @@ alias di='docker images'
 alias drn='docker rmi -f $(docker images -a | grep "<none>" | awk {"print $3"})'
 alias dpsa='docker ps -a'
 alias dps='docker ps'
+#this next one fails on mingw
+alias dgc='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -e DRY_RUN=1 spotify/docker-gc'
