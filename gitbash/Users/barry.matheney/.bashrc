@@ -8,17 +8,12 @@ shopt -s histreedit
 shopt -s histverify
 
 
-export HISTSIZE=10000
-export HISTFILESIZE=10000
+export HISTSIZE=100000
+export HISTFILESIZE=1000000
 export HISTCONTROL=erasedups
 export HISTIGNORE="ls:history"
 
 PROMPT_COMMAND='history -a'  #Store to bash history immediately so the commands will show in other sessions history
-
-if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
-    GIT_PROMPT_ONLY_IN_REPO=1
-    source $HOME/.bash-git-prompt/gitprompt.sh
-fi
 
 # ~/git-completion.bash
 
@@ -44,8 +39,9 @@ GIT_PROMPT_ONLY_IN_REPO=1
 # GIT_PROMPT_THEME=Custom # use custom theme specified in file GIT_PROMPT_THEME_FILE (default ~/.git-prompt-colors.sh)
 # GIT_PROMPT_THEME_FILE=~/.git-prompt-colors.sh
 # GIT_PROMPT_THEME=Solarized # use theme optimized for solarized color scheme
-source ~/.bash-git-prompt/gitprompt.sh
+# source ~/.bash-git-prompt/gitprompt.sh
 if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then 
   GIT_PROMPT_ONLY_IN_REPO=1 
   source $HOME/.bash-git-prompt/gitprompt.sh 
  fi 
+source ~/.bash_aliases

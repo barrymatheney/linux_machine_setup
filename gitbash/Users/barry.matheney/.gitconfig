@@ -1,0 +1,55 @@
+[core]
+	editor = \"C:\\Users\\barry.matheney\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
+	autocrlf = true
+	excludesfile = C:\\Users\\barry.matheney\\Documents\\gitignore_global.txt
+[user]
+	name = Barry Matheney
+#	email = barry_matheney_msdn@outlook.com
+    email = barry.matheney@agilethought.com
+#	email = gitnoreply@suddath.com
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+
+
+[merge]
+	tool = meld
+[mergetool]
+	prompt = true
+[mergetool "vsdiffmerge"]
+	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+	keepBackup = false
+	trustExitCode = true
+[credential]
+	helper = "!f() { /root/.vscode-server/bin/c185983a683d14c396952dd432459097bc7f757f/node /tmp/vscode-remote-containers-46cf52d2250a63f5f49e70a6a61b373b2f9095c1.js $*; }; f"
+[http "https://jbmreleaseflow@dev.azure.com/jbmreleaseflow/release-flow/_git/console-app-net-core"]
+	extraHeader = Authorization: Basic Om5jN29lczZjMnY3dXozaGtpY3R6bnUza2xqZWRvbndiN2prc2tmYjRvZ3d0dWh0cDZheHE=
+[http "https://dev.azure.com/jbmreleaseflow//_git/console-app-net-core"]
+	extraHeader = Authorization: Basic Om5jN29lczZjMnY3dXozaGtpY3R6bnUza2xqZWRvbndiN2prc2tmYjRvZ3d0dWh0cDZheHE=
+[http "https://dev.azure.com/jbmreleaseflow/_git/console-app-net-core"]
+	extraHeader = Authorization: Basic Om5jN29lczZjMnY3dXozaGtpY3R6bnUza2xqZWRvbndiN2prc2tmYjRvZ3d0dWh0
+cDZheHE=
+[http "https://dev.azure.com/jbmreleaseflow/release-flow/_git/console-app-net-core"]
+	extraHeader = Authorization: Basic Om5jN29lczZjMnY3dXozaGtpY3R6bnUza2xqZWRvbndiN2prc2tmYjRvZ3d0dWh0cDZheHE=
+[http "https://dev.azure.com/suddathteam//_git/"]
+	extraHeader = Authorization: Basic Og==
+[http "https://dev.azure.com/suddathteam/Suddath%20Devops%20Template/_git/"]
+	extraHeader = Authorization: Basic OnZyaWtrd3JkeWV0ZW93YTVrcm42ZGE0dGhhenY1eHllaHc3YzJyejR4NnVjeG1pZmI2anE=
+[http "https://dev.azure.com/suddathteam/Suddath%20Devops%20Template/_git/Suddath.Helix.Aggregator.Api.barry.matheney.notforked"]
+	extraHeader = Authorization: Basic OnZyaWtrd3JkeWV0ZW93YTVrcm42ZGE0dGhhenY1eHllaHc3YzJyejR4NnVjeG1pZmI2anE=
+[http "https://dev.azure.com/suddathteam/Suddath%20Devops%20Template/_git/release_management_utils"]
+	extraHeader = Authorization: Basic Og==
+[http "https://dev.azure.com/suddathteam/Suddath%20Devops%20Template/_git/spaces%20in%20name%20test%20repo"]
+	extraHeader = Authorization: Basic OnZyaWtrd3JkeWV0ZW93YTVrcm42ZGE0dGhhenY1eHllaHc3YzJyejR4NnVjeG1pZmI2anE=
+[http "https://dev.azure.com/suddathteam/Devops/_git/spaces%20in%20name%20test%20repo"]
+	extraHeader = Authorization: Basic OnZyaWtrd3JkeWV0ZW93YTVrcm42ZGE0dGhhenY1eHllaHc3YzJyejR4NnVjeG1pZmI2anE=
+[http "https://dev.azure.com/suddathteam/Devops/_git/Suddath.Helix.Aggregator.Api.barry.matheney.notforked"]
+	extraHeader = Authorization: Basic OnZyaWtrd3JkeWV0ZW93YTVrcm42ZGE0dGhhenY1eHllaHc3YzJyejR4NnVjeG1pZmI2anE=
+[diff]
+	tool = winmerge
+[difftool]
+	prompt = false
+[difftool "winmerge"]
+	cmd = C:/Program Files/Winmerge/WinmergeU.exe
