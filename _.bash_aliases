@@ -63,6 +63,7 @@ alias dpsa='docker ps -a'
 alias dps='docker ps'
 alias dgcdr='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -e DRY_RUN=1 spotify/docker-gc'
 alias dgcex='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -e DRY_RUN=0 spotify/docker-gc'
+alias dcmp="docker-compose "
 
 
 
@@ -302,4 +303,5 @@ alias dcb='docker-compose build'
 alias dclogs='docker-compose logs'
 alias dcu='docker-compose up'
 alias ddiff='docker diff'
-alias fa='alias | grep '
+alias fa='cat ~/.bash_aliases | grep | sort'
+alias zz='fa '
